@@ -24,7 +24,7 @@ const font = await Jimp.loadFont(Jimp.FONT_SANS_64_BLACK);
 
 // eslint-disable-next-line
 while (true) {
-  (async () => {
+  await (async () => {
     console.log(`polling for resources`);
     const res = await fetch(
       process.env.SERVER + `/api/get-pptx?secret=${process.env.SECRET}`
