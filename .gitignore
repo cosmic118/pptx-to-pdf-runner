@@ -1,5 +1,10 @@
 # Dev files
 ?.*
+.vscode
+
+powerpoint.pptx
+out.pdf
+out.jpg
 
 # Logs
 logs
