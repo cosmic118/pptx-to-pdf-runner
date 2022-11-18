@@ -12,7 +12,7 @@ import fetch, { fileFromSync } from "node-fetch";
 
 dotenv.config();
 
-const executable = `powerpoint-interop.exe`;
+const executable = `pptx-to-pdf.exe`;
 
 const sleep = (ms: number) =>
   new Promise((resolve) => {
@@ -39,7 +39,7 @@ while (true) {
     } catch {
       // ignore this
     }
-    const p = fs.createWriteStream(`./pptx-to-pdf.pptx`);
+    const p = fs.createWriteStream(`./powerpoint.pptx`);
 
     if (res.body === null) {
       return;
