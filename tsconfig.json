@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "types": [
+      "node",
+      "chai",
+      "mocha"
+    ],
+    "lib": [
+      "ESNext"
+    ],
+    "target": "es2022",
+    "module": "es2022",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "declaration": true,
+    "declarationMap": true,
+    "moduleResolution": "node",
+    "composite": true,
+    "isolatedModules": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "rootDir": "./",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@lib/*": [
+        "./lib/*"
+      ],
+      "@src/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true,
+    "esm": true,
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  },
+  "include": [
+    "./lib/**/*.ts",
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "./node_modules"
+  ]
+}

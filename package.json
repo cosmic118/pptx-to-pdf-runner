@@ -1,0 +1,38 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "repository": "https://github.com/nopeless/resource-runner",
+  "author": "nopeless <38830903+nopeless@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "test": "mocha",
+    "index": "ts-node src/index.ts",
+    "lint": "eslint --fix .",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "chai": "^4.3.7",
+    "eslint": "^8.27.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-import-quotes": "^0.0.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "mocha": "^10.1.0",
+    "prettier": "^2.7.1",
+    "tsconfig-paths": "^4.1.0",
+    "tsx": "^3.12.1",
+    "typescript": "^4.9.3"
+  }
+}
