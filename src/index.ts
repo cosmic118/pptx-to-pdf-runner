@@ -7,7 +7,8 @@ import { execFileSync, execSync } from "child_process";
 import Jimp from "jimp";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import { FormData } from "formdata-polyfill/esm.min";
+// eslint-ignore-next-line
+import { FormData } from "formdata-polyfill/esm.min.js";
 import fetch, { fileFromSync } from "node-fetch";
 
 dotenv.config();
